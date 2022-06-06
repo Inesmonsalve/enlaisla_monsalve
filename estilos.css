@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: max-content;
+  background-color: rgba(233, 212, 196, 0.5490196078);
+  font-size: 20px;
+}
+header nav {
+  margin-left: 26vw;
+}
+header nav li {
+  padding: 10px;
+}
+header nav li a {
+  text-decoration: none;
+  background-image: linear-gradient(#143a23, #a2b393);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+header nav li a:hover {
+  background-size: 100% 2px;
+}
+
+footer {
+  background-color: #a2b393;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+footer h3 {
+  margin-left: 10px;
+  font-size: 20px;
+  color: #143a23;
+}
+footer h4 {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #143a23;
+}
+
+.redes {
+  margin-left: 30vw;
+  margin-top: 10px;
+}
+.redes a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #143a23;
+  transition: 1s;
+  padding: 5px;
+}
+.redes a:hover {
+  color: white;
+  font-size: 30px;
+}
+
+main {
+  height: max-content;
+  background-image: url(Recursos/isla.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main div {
+  width: 450px;
+  height: max-content;
+  background-color: #b9c9ab;
+  border-radius: 10px;
+}
+main div p {
+  font-size: 18px;
+  text-align: justify;
+  padding: 15px;
+}
+main .bienvenidos {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+main .bienvenidos h1 {
+  font-size: 25px;
+  text-align: center;
+  color: #143a23;
+  padding: 3px;
+}
+main .bienvenidos2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-bottom: 50px;
+}
+main .bienvenidos2 h2 {
+  font-size: 25px;
+  text-align: center;
+  color: #143a23;
+  padding: 3px;
+}
+
+.sobreNosotros {
+  height: 757px;
+  background-image: url(./Recursos/presentacion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.sobreNosotros .historiaIsla {
+  height: max-content;
+  width: 300px;
+  background-color: rgba(162, 179, 147, 0.7215686275);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 50px;
+  transition: 2s;
+}
+.sobreNosotros .historiaIsla:hover {
+  width: 350px;
+}
+.sobreNosotros .historiaIsla:hover h3 {
+  font-size: 28px;
+}
+.sobreNosotros .historiaIsla:hover p {
+  font-size: 20;
+}
+.sobreNosotros .historiaIsla h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+}
+.sobreNosotros .historiaIsla p {
+  font-size: 18px;
+}
+
+.productos {
+  height: max-content;
+}
+.productos .cp {
+  margin: 20px;
+  margin-left: 25px;
+  padding: 10px;
+  text-align: center;
+}
+.productos .cp img {
+  width: 250px;
+  margin-left: 65px;
+  margin-top: 5px;
+}
+.productos .cp h2 {
+  font-size: 20px;
+}
+.productos .cp .btn {
+  background-color: rgba(233, 212, 196, 0.5490196078);
+  font-size: 15px;
+}
+
+.consultas {
+  height: max-content;
+  display: grid;
+  grid-template-rows: 40%, 60%;
+}
+.consultas img {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.consultas .cajaConsultas {
+  width: 400px;
+  height: max-content;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.consultas .cajaConsultas button {
+  background-color: #a2b393;
+}
+.consultas .cajaConsultas h2 {
+  color: #143a23;
+}
+
+.contacto {
+  height: 500px;
+  margin-right: 450px;
+  margin-left: 450px;
+  margin-top: 100px;
+}
+.contacto input {
+  width: 400px;
+  padding: 5px;
+  background-color: rgba(233, 212, 196, 0.5490196078);
+  border-radius: 20px;
+}
+.contacto select {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.tituloSeccion {
+  height: max-content;
+  background-color: rgba(233, 212, 196, 0.5490196078);
+  background-image: url(./Recursos/LOGO\ eli.png);
+  background-size: 80px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding: 10px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.tituloSeccion h1 {
+  font-size: 25px;
+  color: #143a23;
+}
+.tituloSeccion i {
+  font-size: 20px;
+  color: #143a23;
+}
+.tituloSeccion .redes {
+  text-align: right;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 820px) {
+  header {
+    font-size: 15px;
+  }
+  header nav {
+    margin-left: 15vw;
+  }
+  footer h3 {
+    font-size: 15px;
+  }
+  footer h4 {
+    font-size: 10px;
+  }
+  .redes {
+    margin-left: 20vw;
+  }
+  .redes a {
+    font-size: 15px;
+  }
+  .redes a:hover {
+    font-size: 20px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  main div {
+    width: 280px;
+    height: max-content;
+    margin: 30px;
+  }
+  main div h1 {
+    font-size: 20px;
+  }
+  main div h2 {
+    font-size: 20px;
+  }
+  main div p {
+    font-size: 15px;
+  }
+  .sobreNosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: max-content;
+    align-content: center;
+  }
+  .consultas {
+    height: max-content;
+    margin-bottom: 20px;
+  }
+  .contacto {
+    height: max-content;
+    margin: 60px;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 1200px) {
+  .sobreNosotros {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
