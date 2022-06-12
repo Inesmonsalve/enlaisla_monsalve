@@ -4,6 +4,7 @@
 }
 
 header {
+  width: auto;
   height: max-content;
   background-color: rgba(233, 212, 196, 0.5490196078);
   font-size: 20px;
@@ -27,23 +28,18 @@ header nav li a:hover {
 }
 
 footer {
-  background-color: #a2b393;
+  width: auto;
   height: max-content;
+  background-color: #a2b393;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
 }
-footer h3 {
+footer .hFooter, footer h4 {
   margin-left: 10px;
-  font-size: 20px;
+  font-size: small;
   color: #143a23;
 }
-footer h4 {
-  margin-left: 10px;
-  font-size: 15px;
-  color: #143a23;
-}
-
 .redes {
   margin-left: 30vw;
   margin-top: 10px;
@@ -112,31 +108,88 @@ main .bienvenidos2 h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.sobreNosotros .historiaIsla {
-  height: max-content;
+
+.historiaIsla-1 {
   width: 300px;
-  background-color: rgba(162, 179, 147, 0.7215686275);
+  height: max-content;
+  background-color: #8eb19b;
+  margin: 50px;
   padding: 10px;
   border-radius: 10px;
-  margin: 50px;
   transition: 2s;
 }
-.sobreNosotros .historiaIsla:hover {
+.historiaIsla-1:hover {
   width: 350px;
 }
-.sobreNosotros .historiaIsla:hover h3 {
+.historiaIsla-1:hover h3 {
   font-size: 28px;
 }
-.sobreNosotros .historiaIsla:hover p {
+.historiaIsla-1:hover p {
   font-size: 20;
 }
-.sobreNosotros .historiaIsla h3 {
+.historiaIsla-1 h3 {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
   padding: 10px;
 }
-.sobreNosotros .historiaIsla p {
+.historiaIsla-1 p {
+  font-size: 18px;
+}
+
+.historiaIsla-2 {
+  width: 300px;
+  height: max-content;
+  background-color: #b9c9ab;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 2s;
+}
+.historiaIsla-2:hover {
+  width: 350px;
+}
+.historiaIsla-2:hover h3 {
+  font-size: 28px;
+}
+.historiaIsla-2:hover p {
+  font-size: 20;
+}
+.historiaIsla-2 h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+}
+.historiaIsla-2 p {
+  font-size: 18px;
+}
+
+.historiaIsla-3 {
+  width: 300px;
+  height: max-content;
+  background-color: rgba(233, 212, 196, 0.5490196078);
+  margin: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 2s;
+}
+.historiaIsla-3:hover {
+  width: 350px;
+}
+.historiaIsla-3:hover h3 {
+  font-size: 28px;
+}
+.historiaIsla-3:hover p {
+  font-size: 20;
+}
+.historiaIsla-3 h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+}
+.historiaIsla-3 p {
   font-size: 18px;
 }
 
@@ -175,6 +228,7 @@ main .bienvenidos2 h2 {
 .consultas .cajaConsultas {
   width: 400px;
   height: max-content;
+  background-color: white;
   margin-left: 40px;
   margin-top: 20px;
 }
@@ -200,9 +254,11 @@ main .bienvenidos2 h2 {
 .contacto select {
   margin-right: 100px;
   margin-left: 100px;
+  background-color: rgba(233, 212, 196, 0.5490196078);
 }
 
 .tituloSeccion {
+  width: auto;
   height: max-content;
   background-color: rgba(233, 212, 196, 0.5490196078);
   background-image: url(./Recursos/LOGO\ eli.png);
@@ -277,9 +333,35 @@ main .bienvenidos2 h2 {
     height: max-content;
     margin-bottom: 20px;
   }
-  .contacto {
+  .consultas img {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .consultas .cajaConsultas {
+    width: 250px;
     height: max-content;
-    margin: 60px;
+    margin-left: 28px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .contacto {
+    height: 450px;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  .contacto input {
+    width: 250px;
+    padding: 5px;
+    background-color: rgba(233, 212, 196, 0.5490196078);
+    border-radius: 20px;
+  }
+  .contacto select {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    background-color: rgba(233, 212, 196, 0.5490196078);
   }
 }
 @media only screen and (min-width: 820px) and (max-width: 1200px) {
@@ -288,6 +370,24 @@ main .bienvenidos2 h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .consultas {
+    height: max-content;
+    margin-bottom: 30px;
+  }
+  .contacto {
+    height: 450px;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  .contacto input {
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .contacto select {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
   }
 }
 
