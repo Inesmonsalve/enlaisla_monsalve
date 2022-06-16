@@ -1,6 +1,7 @@
 // colores de la web
 $color1: #e9d4c48c;
 $color2: #a2b393;
+$color3:#b9c9ab;
 $colortext: #143a23;
 
 * {
@@ -89,7 +90,7 @@ main {
     grid-template-rows: repeat(2, 1fr);
 
     div {
-        @include base(450px, max-content, #b9c9ab);
+        @include base(450px, max-content, $color3);
         border-radius: 10px;
 
         p {
@@ -128,11 +129,41 @@ main {
         }
     }
 }
+section{
+    @include base( auto, max-content, white);
+    div{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        margin: 50px;
+        }
+    .contenido{
+        width: 250px;
+        height: max-content;
+
+        h3{
+            font-size: large;
+            font-weight: bold;
+            margin-top: 60px;
+            text-align: left;
+        }
+        p{
+            width: 300px;
+            font-size: medium;
+            text-align: justify;
+            margin-top: 10px;
+        }
+    }
+}
+}
 
 // estilo para pagina sobre nosotros 
 
 .sobreNosotros {
-    height: 757px;
+    height: 900px;
     background-image: url(./Recursos/presentacion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,6 +195,9 @@ $bgcolor in $historias {
 
             p {
                 font-size: 20;
+                li{
+                    list-style: none;
+                }
             }
         }
 
@@ -241,10 +275,11 @@ $bgcolor in $historias {
     // estilo para pagina cpntacto 
 
     .contacto {
-        height: 500px;
+        height: max-content;
         margin-right: 450px;
         margin-left: 450px;
         margin-top: 100px;
+        margin-bottom: 100px;
 
         input {
             width: 400px;

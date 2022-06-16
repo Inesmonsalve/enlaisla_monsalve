@@ -100,8 +100,40 @@ main .bienvenidos2 h2 {
   padding: 3px;
 }
 
+section {
+  width: auto;
+  height: max-content;
+  background-color: white;
+}
+section div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section div img {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  margin: 50px;
+}
+section div .contenido {
+  width: 250px;
+  height: max-content;
+}
+section div .contenido h3 {
+  font-size: large;
+  font-weight: bold;
+  margin-top: 60px;
+  text-align: left;
+}
+section div .contenido p {
+  width: 300px;
+  font-size: medium;
+  text-align: justify;
+  margin-top: 10px;
+}
+
 .sobreNosotros {
-  height: 757px;
+  height: 900px;
   background-image: url(./Recursos/presentacion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,6 +158,9 @@ main .bienvenidos2 h2 {
 }
 .historiaIsla-1:hover p {
   font-size: 20;
+}
+.historiaIsla-1:hover p li {
+  list-style: none;
 }
 .historiaIsla-1 h3 {
   text-align: center;
@@ -155,6 +190,9 @@ main .bienvenidos2 h2 {
 .historiaIsla-2:hover p {
   font-size: 20;
 }
+.historiaIsla-2:hover p li {
+  list-style: none;
+}
 .historiaIsla-2 h3 {
   text-align: center;
   font-weight: bold;
@@ -182,6 +220,9 @@ main .bienvenidos2 h2 {
 }
 .historiaIsla-3:hover p {
   font-size: 20;
+}
+.historiaIsla-3:hover p li {
+  list-style: none;
 }
 .historiaIsla-3 h3 {
   text-align: center;
@@ -240,10 +281,11 @@ main .bienvenidos2 h2 {
 }
 
 .contacto {
-  height: 500px;
+  height: max-content;
   margin-right: 450px;
   margin-left: 450px;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .contacto input {
   width: 400px;
